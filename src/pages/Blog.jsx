@@ -1,5 +1,5 @@
 import React from "react";
-import interiorimg13 from "../assets/int-14.jpg";
+import interiorimg13 from "../assets/int-27.jpg";
 import interiorimg14 from "../assets/int-13.jpg";
 import interiorimg15 from "../assets/int-9.jpg";
 import interiorimg16 from "../assets/int-16.jpg";
