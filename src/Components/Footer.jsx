@@ -1,5 +1,8 @@
 import { motion } from "framer-motion";
 
+import { FaFacebookF, FaInstagram, FaVimeoV } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+
 export default function Footer() {
   return (
     <footer className="relative bg-black text-white">
@@ -15,7 +18,7 @@ export default function Footer() {
           {/* BRAND */}
           <div className="space-y-6">
             <h2 className="text-3xl font-bold tracking-wide">
-              Tecture
+              Interior
             </h2>
             <p className="text-gray-400 text-sm leading-relaxed max-w-xs">
               Feugiat a ligula rutrum luctus primis ultrice integer congue magna at
@@ -23,16 +26,27 @@ export default function Footer() {
             </p>
 
             <div className="flex gap-4 text-gray-400">
-              {["f", "t", "v", "i"].map((icon, i) => (
-                <motion.span
-                  key={i}
-                  whileHover={{ y: -3 }}
-                  className="cursor-pointer hover:text-white transition"
-                >
-                  {icon}
-                </motion.span>
-              ))}
-            </div>
+  {[
+    { icon: <FaFacebookF />, link: "#" },
+    { icon: <FaXTwitter />, link: "#" },
+    { icon: <FaVimeoV />, link: "#" },
+    { icon: <FaInstagram />, link: "#" },
+  ].map((item, i) => (
+    <motion.a
+      key={i}
+      href={item.link}
+      whileHover={{ y: -3, scale: 1.05 }}
+      transition={{ type: "spring", stiffness: 300 }}
+      className="w-9 h-9 rounded-full border border-white/20
+                 flex items-center justify-center
+                 hover:bg-white hover:text-black
+                 transition cursor-pointer"
+    >
+      {item.icon}
+    </motion.a>
+  ))}
+</div>
+
           </div>
 
           {/* INDUSTRY SECTORS */}
@@ -62,14 +76,13 @@ export default function Footer() {
             <h4 className="font-semibold text-lg">Get In Touch</h4>
             <ul className="space-y-3 text-gray-400 text-sm leading-relaxed">
               <li>
-                Valentin, Street Road 24,<br />
-                New York, USA – 67452
+              palakkad
               </li>
               <li className="text-white font-medium">
-                +02) 574 - 328 - 301
+                +91) 574 - 328 - 301
               </li>
               <li className="hover:text-white transition cursor-pointer">
-                shifamonir679@gmail.com
+               swathikrithambara@gmail.com
               </li>
             </ul>
           </div>
@@ -104,7 +117,7 @@ export default function Footer() {
 
         {/* BOTTOM BAR */}
         <div className="mt-6 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500 gap-4">
-          <p>© 2024 – 2027 | All Rights Reserved By Website_Stock</p>
+          <p>© 2026 – 2027 | All Rights Reserved By Swathi</p>
 
           <div className="flex gap-6">
             {["Terms", "Privacy", "License", "Privacy Policy"].map((item) => (
