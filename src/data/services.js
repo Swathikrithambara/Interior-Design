@@ -1,6 +1,6 @@
 import interior13 from "../assets/int-13.jpg"
 import interior19 from "../assets/int-19.jpg"
-import interior28 from "../assets/int-28.jpg"
+import interior28 from "../assets/int-28.jpeg"
 import interior20 from "../assets/int-20.jpg"
 
 
