@@ -10,28 +10,28 @@ export const services = [
     id: "01",
     title: "Interior Consulting",
     image:
-    {interior13},
+    interior13,
     icon: "🪑",
   },
   {
     id: "02",
     title: "Architecture & Building",
     image:
-     {interior28},
+     interior28,
     icon: "🏗️",
   },
   {
     id: "03",
     title: "Landscaping Design",
     image:
-  {interior20},
+  interior20,
     icon: "🌿",
   },
   {
     id: "04",
     title: "Décor & Art Design",
     image:
-     {interior19},
+     interior19,
     icon: "🖼️",
   },
 ];
